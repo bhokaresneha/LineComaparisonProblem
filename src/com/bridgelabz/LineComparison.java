@@ -40,10 +40,7 @@ public class LineComparison {
             System.out.println("Line 2 is greater than line1");
         else
             System.out.println("Both lines are parallel");
-
-
-
-    }
+   }
 
     public static void main(String[] args) {
 
