@@ -10,9 +10,24 @@ public class LineComparison {
     }
     static void calculation(int x1,int y1,int x2,int y2,int x3,int y3,int x4,int y4){
 
-    //Displaying co-ordinated taken by user
+        //Displaying co-ordinated taken by user
         System.out.println("Co-ordinates  of Line1 are :\nx1=" + x1+"  y1="+y1+"\nx2="+x2+"  y2="+y2);
         System.out.println("Co-ordinates  of Line2 are :\nx3=" + x3+"  y3="+y3+"\nx4="+x3+"  y4="+y4);
+
+        //calculating length of Line 1
+        Integer length1 = (int) Math.sqrt((x2 - x1) * 2 + (y2 - y1) * 2);
+        System.out.println("Length of First line is : " + length1);
+
+        // calculating length of Line 2
+        Integer length2 = (int) Math.sqrt((x4- x3) * 2 + (y4 - y3) * 2);
+        System.out.println("Length of second line is : " + length2);
+
+        // checking length is equal or not using equals method
+        boolean result = length1.equals(length2);
+        if (result == false)
+            System.out.println("Both Lines are not Same");
+        else
+            System.out.println("Both lines are same");
 
 
     }
