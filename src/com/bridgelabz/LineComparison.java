@@ -1,4 +1,7 @@
-
+/* Problem Statement=>
+*As a fan of geometry, I want to compare two lines based on the end points, So that I know one line is equal, greater or less than the other line.
+* - Using Java compareTo method to compare 2 Lengths is preferable.*
+ */
 package com.bridgelabz;
 
 import java.util.Scanner;
@@ -29,8 +32,15 @@ public class LineComparison {
         else
             System.out.println("Both lines are same");
 
-
-    }
+        //comparing both lines using compareTo method
+        int result2 = length1.compareTo(length2);
+        if (result2>0)
+            System.out.println("Line 1 is greater than line 2");
+        else if (result2 < 0)
+            System.out.println("Line 2 is greater than line1");
+        else
+            System.out.println("Both lines are parallel");
+   }
 
     public static void main(String[] args) {
 
